@@ -9,7 +9,7 @@ cask "menu-bar-nape-pro-status" do
 
   depends_on macos: ">= :sonoma"
 
-  app "Menu Bar Nape Pro Status.app"
+  app "Menu Bar Nape Pro Status.app", no_quarantine: true
 
   zap trash: [
     "~/Library/Preferences/io.github.krgpi.MenuBarNapeProStatus.plist",
