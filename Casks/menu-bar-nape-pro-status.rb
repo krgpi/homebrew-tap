@@ -7,7 +7,7 @@ cask "menu-bar-nape-pro-status" do
   desc "macOS menu bar app that displays Keychron Nape Pro trackball status"
   homepage "https://github.com/krgpi/menu-bar-nape-pro-status"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Menu Bar Nape Pro Status.app"
 
