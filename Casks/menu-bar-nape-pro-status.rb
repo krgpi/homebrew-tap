@@ -1,6 +1,6 @@
 cask "menu-bar-nape-pro-status" do
-  version "1.0.0"
-  sha256 :no_check
+  version "1.0.1"
+  sha256 "57072f3307d8a49c9043db69f1e3966a5c2d73632b5af875160ced69407edf52"
 
   url "https://github.com/krgpi/menu-bar-nape-pro-status/releases/download/v#{version}/MenuBarNapeProStatus.zip"
   name "Menu Bar Nape Pro Status"
