@@ -9,9 +9,14 @@ cask "menu-bar-nape-pro-status" do
 
   depends_on macos: ">= :sonoma"
 
-  app "Menu Bar Nape Pro Status.app", no_quarantine: true
+  app "Menu Bar Nape Pro Status.app"
 
   zap trash: [
     "~/Library/Preferences/io.github.krgpi.MenuBarNapeProStatus.plist",
   ]
+
+  caveats <<~EOS
+    This app is not signed.
+    You may need to allow it in System Settings > Privacy & Security.
+  EOS
 end
