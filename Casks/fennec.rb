@@ -10,6 +10,7 @@ cask "fennec" do
   depends_on macos: ">= :tahoe"
 
   app "Fennec.app"
+  binary "#{appdir}/Fennec.app/Contents/MacOS/fennec"
 
   postflight do
     system_command "/usr/bin/xattr",
