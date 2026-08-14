@@ -4,10 +4,11 @@ cask "fennec" do
 
   url "https://github.com/krgpi/fennec/releases/download/v#{version}/Fennec_#{version}_arm64.zip"
   name "Fennec"
-  desc "Local transcription & AI meeting notes for macOS"
+  desc "Local transcription and AI meeting notes"
   homepage "https://github.com/krgpi/fennec"
 
-  depends_on macos: ">= :tahoe"
+  depends_on arch: :arm64
+  depends_on macos: :tahoe
 
   app "Fennec.app"
   binary "#{appdir}/Fennec.app/Contents/MacOS/fennec"
@@ -19,8 +20,8 @@ cask "fennec" do
 
   zap trash: [
     "~/Library/Application Support/io.github.krgpi.Fennec",
-    "~/Library/Preferences/io.github.krgpi.Fennec.plist",
     "~/Library/Caches/io.github.krgpi.Fennec",
+    "~/Library/Preferences/io.github.krgpi.Fennec.plist",
   ]
 
   caveats <<~EOS
