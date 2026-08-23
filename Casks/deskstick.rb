@@ -1,6 +1,6 @@
 cask "deskstick" do
-  version "0.0.0"
-  sha256 "PLACEHOLDER"
+  version "1.0.8"
+  sha256 "8485bcf996d8c45593fdcafa2be7a1c719ad941818d5b7adf0fbb30a43957adf"
 
   url "https://github.com/krgpi/releases/releases/download/deskstick-v#{version}/DeskStick-#{version}.zip"
   name "DeskStick"
