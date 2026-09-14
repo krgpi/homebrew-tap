@@ -1,6 +1,6 @@
 cask "fennec" do
-  version "0.0.2"
-  sha256 "ef5f45cbfe490cfaea1b39bcac0c644001a2bbcc1c9e14f79ae8c3c8f25db874"
+  version "0.0.3"
+  sha256 "0684901ce65248721284851474ac1ac6b85879b90f2d6c9e1dbb618dd5f318ce"
 
   url "https://github.com/krgpi/fennec/releases/download/v#{version}/Fennec_#{version}_arm64.zip"
   name "Fennec"
